@@ -9,136 +9,143 @@ html {
 	width: 100vw;
 }
 
-@media screen {
+body {
+	height: 100%;
+	font-family: "Roboto", sans-serif;
+	font-size: 1vw;
+}
+
+.container {
+	background-color: aliceblue;
+	padding: 20px;
+}
+
+.writeup {
+	width: 60%;
+	padding: 20px 40px 20px 20px;
+	align-self: center;
+}
+
+h1 {
+	margin: 15px 0;
+}
+
+h1 + p {
+	font-size: 1.1vw;
+	margin: 20px 0;
+}
+
+.icon {
+	width: 70%;
+}
+
+.listIcon {
+	display: flex;
+	align-self: self-end;
+	margin: 10px 0;
+}
+
+.listIcon p {
+	font-size: 1.1vw;
+	padding-left: 7px;
+}
+
+.label {
+	margin: 20px 0 5px 0;
+}
+
+label {
+	font-size: 0.9vw;
+	font-weight: 700;
+}
+
+.label span {
+	font-size: 0.9vw;
+}
+
+.dImage {
+	width: 50%;
+	max-height: 50%;
+}
+
+#dPicture {
+	width: 40%;
+	height: auto;
+	max-height: 450px;
+	margin-left: auto;
+}
+
+input[type="email"] {
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+::placeholder {
+	color: grey;
+	opacity: 0.5;
+}
+
+button,
+input[type="submit"] {
+	background-color: hsl(234, 29%, 20%);
+	width: 100%;
+	height: 45px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	margin: 15px 0;
+	padding: 10px;
+}
+
+.thanks {
+	background-color: aliceblue;
+	width: 25%;
+	border-radius: 15px;
+	padding: 20px 35px;
+	min-width: 300px;
+	display: none;
+}
+
+.thanks p {
+	font-size: 1vw;
+	line-height: 4vh;
+}
+
+.thanks h1 {
+	font-size: 3vw;
+}
+
+.thanks button {
+	margin-top: 0;
+}
+
+.thanks button:hover,
+button:hover {
+	background-color: hsl(4, 100%, 67%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+}
+
+@media screen and (min-width: 415px) {
 	body {
 		background-color: hsl(235, 18%, 26%);
-		height: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-family: "Roboto", sans-serif;
 	}
 
 	.container {
 		width: 55%;
 		background-color: aliceblue;
-		height: auto;
+		max-height: 500px;
+		min-height: 200px;
 		border-radius: 20px;
-		padding: 20px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-	}
-
-	.writeup {
-		width: 60%;
-		padding: 20px 40px 20px 20px;
-		align-self: center;
-	}
-
-	h1 {
-		margin: 15px 0;
-	}
-
-	h1 + p {
-		font-size: 1.1vw;
-		margin: 20px 0;
-	}
-
-	.icon {
-		width: 70%;
-	}
-
-	.listIcon {
-		display: flex;
-		align-self: self-end;
-		margin: 10px 0;
-	}
-
-	.listIcon p {
-		font-size: 1.1vw;
-		padding-left: 7px;
-	}
-
-	.label {
-		margin: 20px 0 5px 0;
-	}
-
-	label {
-		font-size: 0.9vw;
-		font-weight: 700;
-	}
-
-	.label span {
-		font-size: 0.9vw;
-	}
-
-	.dImage {
-		width: 50%;
-		max-height: 50%;
-	}
-
-	#dPicture {
-		width: 40%;
-		height: auto;
-		margin-left: auto;
-	}
-
-	input[type="email"] {
-		width: 100%;
-		height: 35px;
-		border-radius: 5px;
-		border: 1px solid grey;
-		padding-left: 10px;
-		cursor: pointer;
-	}
-
-	::placeholder {
-		color: grey;
-		opacity: 0.5;
-	}
-
-	button {
-		background-color: hsl(234, 29%, 20%);
-		width: 100%;
-		height: 45px;
-		border-radius: 5px;
-		border: none;
-		color: white;
-		margin: 15px 0;
-		padding: 10px;
-	}
-
-	.container {
-		display: none;
-	}
-
-	.thanks {
-		background-color: aliceblue;
-		width: 25%;
-		border-radius: 15px;
-		padding: 20px 35px;
-		min-width: 300px;
-		display: none;
-	}
-
-	.thanks p {
-		font-size: 1vw;
-		line-height: 4vh;
-	}
-
-	.thanks h1 {
-		font-size: 3vw;
-	}
-
-	.thanks button {
-		margin-top: 0;
-	}
-
-	.thanks button:hover,
-	button:hover {
-		background-color: hsl(4, 100%, 67%);
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		cursor: pointer;
 	}
 }
