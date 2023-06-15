@@ -15,11 +15,100 @@ body {
 }
 
 .container {
-	padding: 25px;
+	font-size: large;
+}
+
+article {
+	padding: 40px 25px 20px 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 + p {
+	margin: 20px 0;
+}
+
+.thanks {
+	display: none;
 }
 
 #mPicture {
 	width: 100%;
+}
+
+h1 {
+	font-weight: 600;
+	margin: 10px 0;
+	font-size: 40px;
+}
+
+.icon {
+	width: 100%;
+}
+
+.listIcon {
+	display: flex;
+	margin: 10px 0;
+}
+
+.listIcon p {
+	padding-left: 7px;
+}
+
+form {
+	margin: 20px 0;
+}
+
+.label p {
+	display: inline-block;
+	margin: 5px 0;
+}
+
+label {
+	font-size: 4vw;
+	font-weight: 700;
+}
+
+.label span {
+	font-size: 3vw;
+	display: none;
+}
+
+form input[type="email"] {
+	padding: 15px;
+	height: 50px;
+}
+
+input[type="email"] {
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	padding-left: 10px;
+	cursor: pointer;
+}
+::placeholder {
+	color: grey;
+	opacity: 0.5;
+}
+
+button,
+input[type="submit"] {
+	background-color: hsl(234, 29%, 20%);
+	width: 100%;
+	height: 45px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	margin: 15px 0;
+	padding: 10px;
+}
+
+.thanks button:hover,
+button:hover {
+	background-color: hsl(4, 100%, 67%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
 }
 
 #dPicture {
@@ -58,39 +147,6 @@ body {
 		margin: 15px 0;
 	}
 
-	h1 + p {
-		font-size: 1.1vw;
-		margin: 20px 0;
-	}
-
-	.icon {
-		width: 70%;
-	}
-
-	.listIcon {
-		display: flex;
-		align-self: self-end;
-		margin: 10px 0;
-	}
-
-	.listIcon p {
-		font-size: 1.1vw;
-		padding-left: 7px;
-	}
-
-	.label {
-		margin: 20px 0 5px 0;
-	}
-
-	label {
-		font-size: 0.9vw;
-		font-weight: 700;
-	}
-
-	.label span {
-		font-size: 0.9vw;
-	}
-
 	.dImage {
 		width: 50%;
 		max-height: 50%;
@@ -101,32 +157,6 @@ body {
 		height: auto;
 		max-height: 450px;
 		margin-left: auto;
-	}
-
-	input[type="email"] {
-		width: 100%;
-		height: 35px;
-		border-radius: 5px;
-		border: 1px solid grey;
-		padding-left: 10px;
-		cursor: pointer;
-	}
-
-	::placeholder {
-		color: grey;
-		opacity: 0.5;
-	}
-
-	button,
-	input[type="submit"] {
-		background-color: hsl(234, 29%, 20%);
-		width: 100%;
-		height: 45px;
-		border-radius: 5px;
-		border: none;
-		color: white;
-		margin: 15px 0;
-		padding: 10px;
 	}
 
 	.thanks {
@@ -149,12 +179,5 @@ body {
 
 	.thanks button {
 		margin-top: 0;
-	}
-
-	.thanks button:hover,
-	button:hover {
-		background-color: hsl(4, 100%, 67%);
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		cursor: pointer;
 	}
 }
