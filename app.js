@@ -16,6 +16,7 @@ form.addEventListener("submit", function (e) {
 		feedBack.classList.remove("hidden");
 		subEmail.innerText = input.value;
 		input.value = "";
+		errorReport.innerText = "";
 	}
 });
 
