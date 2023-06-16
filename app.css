@@ -29,7 +29,12 @@ h1 + p {
 }
 
 .thanks {
-	display: none;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	height: 100%;
 }
 
 #mPicture {
@@ -59,24 +64,24 @@ form {
 	margin: 20px 0;
 }
 
-.label p {
-	display: inline-block;
-	margin: 5px 0;
-}
-
-label {
-	font-size: 4vw;
-	font-weight: 700;
-}
-
-.label span {
+#invalidEmail {
 	font-size: 3vw;
-	display: none;
 }
 
 form input[type="email"] {
 	padding: 15px;
 	height: 50px;
+}
+
+.label {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+#invalidEmail {
+	color: red;
+	padding-right: 5px;
 }
 
 input[type="email"] {
@@ -87,6 +92,7 @@ input[type="email"] {
 	padding-left: 10px;
 	cursor: pointer;
 }
+
 ::placeholder {
 	color: grey;
 	opacity: 0.5;
@@ -96,12 +102,11 @@ button,
 input[type="submit"] {
 	background-color: hsl(234, 29%, 20%);
 	width: 100%;
-	height: 45px;
 	border-radius: 5px;
 	border: none;
 	color: white;
 	margin: 15px 0;
-	padding: 10px;
+	padding: 20px;
 }
 
 .thanks button:hover,
@@ -165,7 +170,6 @@ button:hover {
 		border-radius: 15px;
 		padding: 20px 35px;
 		min-width: 300px;
-		display: none;
 	}
 
 	.thanks p {
@@ -180,4 +184,8 @@ button:hover {
 	.thanks button {
 		margin-top: 0;
 	}
+}
+
+.hidden {
+	display: none;
 }
